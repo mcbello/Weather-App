@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'sessions#new'
 
+  get 'sessions/index' => "sessions#index"
+
   resource :sessions
   resource :users
 
