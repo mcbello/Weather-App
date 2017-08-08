@@ -3,7 +3,11 @@
 <p>
   <strong>Name:</strong>
   <%= @city.name %>
+  <%= weather = WeatherService.get_city_weather(@city.name)%>
+  <td><%= image_tag ("http://openweathermap.org/img/w/#{weather['weather'][0]['icon']}.png") %></td>
 </p>
 
 <%= link_to 'Edit', edit_city_path(@city) %> |
 <%= link_to 'Back', dashboard_index_path %>
+
+<%= console %>
