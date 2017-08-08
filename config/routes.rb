@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  resources :cities
   root 'sessions#new'
 
   get 'sessions/index' => "sessions#index"
-
+  get 'dashboard/index' => "dashboard#index"
+  get 'cities' => "cities#index"
   resource :sessions
   resource :users
 

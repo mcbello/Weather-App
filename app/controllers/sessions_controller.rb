@@ -11,6 +11,6 @@ class SessionsController < ApplicationController
 
     #logged in
     session[:user_id] = @user.id
-    redirect_to sessions_index_path
+    redirect_to dashboard_index_path
   end
 end
