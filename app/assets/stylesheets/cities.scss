@@ -1,6 +1,47 @@
 // Place all the styles related to the cities controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.blue-sky {
+    background-image: url('/images/blue-sky.jpg');
+
+  }
+.night-sky {
+    background-image: url('/images/night-sky.jpg');
+}
+
+.city-header {
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+.temp {
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.info {
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  font-size: 30px;
+  margin-top: 30px;
+
+}
+
+.icon {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+
+
 
 .event_name {
   font-size: 20px;
