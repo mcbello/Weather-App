@@ -12,15 +12,15 @@
   <p class="temp"><%= weather['weather'][0]['description']%></p>
   <p class="info">Sunrise:<%= Time.at(weather['sys']['sunrise']).strftime("%I:%M%p")%></p>
   <p class="info">Sunset:<%= Time.at(weather['sys']['sunset']).strftime("%I:%M%p")%></p>
-  <p class="info">Pressure:<%= weather['main']['pressure']%>hPa</p>
+  <p class="info">Pressure:<%= weather['main']['pressure']%> hPa</p>
   <p class="info">Humidity:<%= weather['main']['humidity']%>%</p>
   <p class="info">Wind:<%= weather['wind']['speed']%>mph</p>
-  <p class="info">Min Temperture:<%= weather['main']['temp_min']%>&deg;F</p>
-  <p class="info">Max Temperture:<%= weather['main']['temp_max']%>&deg;F</p>
+  <p class="info">Min Temperature:<%= weather['main']['temp_min']%>&deg;F</p>
+  <p class="info">Max Temperature:<%= weather['main']['temp_max']%>&deg;F</p>
 
 </p>
 <button type="button" onclick="$('body').toggleClass('blue-sky night-sky');" name="button">Click me!</button>
 
-<%= link_to 'Edit', edit_city_path(@city) %> |
-<%= link_to 'Back', dashboard_index_path %>
+<button type="button"><%= link_to 'Edit', edit_city_path(@city) %></button> |
+<button type="button"><%= link_to 'Back', dashboard_index_path %></button>
 </body>

@@ -9,6 +9,8 @@
     background-image: url('/images/night-sky.jpg');
 }
 
+
+
 .city-header {
     text-align: center;
     font-family: sans-serif;
@@ -40,7 +42,9 @@
   margin-top: 20px;
 }
 
-
+.onclick {
+  text-align: center;
+}
 
 
 .event_name {
@@ -89,7 +93,7 @@
 }
 
 .city-card-top{
-  background: blue   ;
+  background: 	#00BFFF  ;
   color: #EDF2F4;
   border-radius: 20px 20px 0 0;
   padding: 20px;
@@ -105,7 +109,7 @@
 }
 
 .city-card-bottom {
-  background: #fff    ;
+  background: #D3D3D3   ;
   border: 1px solid #000;
   border-radius: 0 0 20px 20px;
   padding: 20px;

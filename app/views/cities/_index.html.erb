@@ -1,3 +1,4 @@
+
 <p id="notice"><%= notice %></p>
 
 <h1>Favorite Cities</h1>
@@ -20,10 +21,10 @@
           <p class="card-text"><span class="sub"><%= image_tag ("http://openweathermap.org/img/w/#{weather['weather'][0]['icon']}.png") %></strong></p>
           <p class="card-text"><span class="sub"><%= weather['main']['temp']%>&deg;F</strong></p>
           <p class="card-text"><span class="sub"><%= weather['weather'][0]['description']%></strong></p>
-          <p class="card-text"><span class="sub"><%= weather['main']['pressure']%>hPa</strong></p>
-          <p class="card-text"><span class="sub"><%= weather['main']['humidity']%>%</strong></p>
-          <p class="card-text"><span class="sub"><%= weather['main']['temp_min']%>&deg;F</strong></p>
-          <p class="card-text"><span class="sub"><%= weather['main']['temp_max']%>&deg;F</strong></p>
+          <p class="card-text"><span class="sub">Pressure: <%= weather['main']['pressure']%> hPa</strong></p>
+          <p class="card-text"><span class="sub">Humidity: <%= weather['main']['humidity']%>%</strong></p>
+          <p class="card-text"><span class="sub">Min Temperature: <%= weather['main']['temp_min']%>&deg;F</strong></p>
+          <p class="card-text"><span class="sub">Max Temperature: <%= weather['main']['temp_max']%>&deg;F</strong></p>
           <%= link_to 'Show', city, class: 'btn btn-info' %>
             <%= link_to 'Edit', edit_city_path(city), class: 'btn btn-info' %>
             <%= link_to 'Destroy', city, class: 'btn btn-info', method: :delete, data: { confirm: 'Are you sure?' } %>
