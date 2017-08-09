@@ -13,25 +13,4 @@
  *= require_tree .
  *= require_self
  */
- .top-header {
-   height: 50px;
-   .fixed {
-     // background: #F34D4D;
-     background: #ff3019; /* Old browsers */
-     background: -moz-radial-gradient(center, ellipse cover, #ff3019 0%, #cf0404 84%); /* FF3.6-15 */
-     background: -webkit-radial-gradient(center, ellipse cover, #ff3019 0%,#cf0404 84%); /* Chrome10-25,Safari5.1-6 */
-     background: radial-gradient(ellipse at center, #ff3019 0%,#cf0404 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-     z-index: 10000;
-     width: 100%;
-     height: 50px;
-     position: fixed;
-     display: flex;
-     justify-content: flex-end;
-     align-items: center;
-     .right {
-       margin-left: auto;
-       margin-right: 15px;
-       a {
-         max-width: 100%;
-       }
-     }
+ 
