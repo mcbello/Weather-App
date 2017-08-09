@@ -2,6 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .login {
+  margin-top: 100px;
   border: solid #D3D3D3;
-  background-color: #D3D3D3;
+  background: rgba(#D3D3D3, 0.6);
+
+}
+
+.login-img {
+  background-image: url('/images/login-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }

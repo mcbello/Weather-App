@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'sessions#new'
 
   get 'sessions/index' => "sessions#index"
+  get '/logout' => 'sessions#destroy'
   get 'dashboard/index' => "dashboard#index"
   get 'cities' => "cities#index"
   resource :sessions

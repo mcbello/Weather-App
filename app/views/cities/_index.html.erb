@@ -1,8 +1,9 @@
 
 <p id="notice"><%= notice %></p>
+<%= link_to 'Add New City', new_city_path, class: 'btn btn-info' %>
 
-<h1>Favorite Cities</h1>
-
+<center><h1 class="fav-city">Favorite Cities</h1></center>
+<body class="profile-img">
 
   <div class="col-xs-12">
 
@@ -18,7 +19,7 @@
         <div class="card-block">
 
         <% weather = WeatherService.get_city_weather(city.name)%>
-          <p class="card-text"><span class="sub"><%= image_tag ("http://openweathermap.org/img/w/#{weather['weather'][0]['icon']}.png") %></strong></p>
+          <p class="card-text"><span class="sub"><%= image_tag ("http://openweathermap.org/img/w/#{weather['weather'][0]['icon']}.png") %></p>
           <p class="card-text"><span class="sub"><%= weather['main']['temp']%>&deg;F</strong></p>
           <p class="card-text"><span class="sub"><%= weather['weather'][0]['description']%></strong></p>
           <p class="card-text"><span class="sub">Pressure: <%= weather['main']['pressure']%> hPa</strong></p>
@@ -34,10 +35,11 @@
 
     <% end %>
 
+  
 </div>
 
 
 
-<br>
 
-<%= link_to 'New City', new_city_path %>
+
+</body>

@@ -13,4 +13,10 @@ class SessionsController < ApplicationController
     session[:user_id] = @user.id
     redirect_to dashboard_index_path
   end
+  def destroy
+    session[:user_id] = nil
+
+    # reset_session
+    redirect_to root_path
+  end
 end

@@ -13,6 +13,12 @@
   </head>
 
   <body>
+    <header class="top-header">
+      <div class="fixed">
+        <% if current_user %>
+        <span class="right">
+              <%= link_to "Logout", '/logout', class: 'btn btn-info submit' %>
+        <% end %>
     <%= yield %>
   </body>
 </html>
